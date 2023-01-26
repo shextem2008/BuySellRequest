@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 
 import Button from 'react-bootstrap/Button';
+import HomeScreen from './screens/HomeScreen';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
           <Container className="mt-3">
             <Routes>
             
-     
+            <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>
         </main>
